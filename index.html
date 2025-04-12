@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-files/preloader.css">
+</head>
+<body class="body">
+    <div class="book">
+        <div class="book__pg-shadow"></div>
+        <div class="book__pg"></div>
+        <div class="book__pg book__pg--2"></div>
+        <div class="book__pg book__pg--3"></div>
+        <div class="book__pg book__pg--4"></div>
+        <div class="book__pg book__pg--5"></div>
+        <div class="text">Loading...</div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+          const preloader = document.querySelector('.body');
+          preloader.classList.add('fade-out');
+      
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1000); // adjust delay based on your fade-out animation
+        });
+      </script>
+</body>
+</html>
